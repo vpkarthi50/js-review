@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	</head>
+	<style>
+		table,th,td{
+			border:2px solid black;
+			text-align:center;
+		}
+		th{
+			width:2%;
+			height:5vh;
+		}
+	</style>
+	<body>
+		<table>
+			<tr>
+				<th>S.No</th>
+				<th>Method</th>
+				<th>Syntax</th>
+				<th>Example</th>
+				<th>Output</th>
+				<th>Definition</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Concat()</td>
+				<td><code>array1.concat(array2, array3, ..., arrayX)</code></td>
+				<td><code>const arr1 = ["Cecilie", "Lone"];
+					const arr2 = ["Emil", "Tobias", "Linus"];
+					const children = arr1.concat(arr2);</code> </td>
+				<td><output>Cecilie,Lone,Emil,Tobias,Linus</output></td>
+				<td>The concat() method concatenates (joins) two or more arrays</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>constructor</td>
+				<td><code>array.constructor</code></td>
+				<td><code>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+						  let text = fruits.constructor;</code> </td>
+				<td><output>function Array() { [native code] }</output></td>
+				<td>The constructor property returns the function that created the Array prototype.
+					For JavaScript arrays the constructor property returns:</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>filter()</td>
+				<td><code>array.filter(function(currentValue, index, arr), thisValue)</code></td>
+				<td><code>const ages = [32, 33, 16, 40];
+							const result = ages.filter(checkAdult);
+
+							function checkAdult(age) {
+							  return age >= 18;
+							}</code> </td>
+				<td><output>32,33,40</output></td>
+				<td>It check a every value in a array and the filter it</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>findIndex()</td>
+				<td><code>array.findIndex(function(currentValue, index, arr), thisValue)</code></td>
+				<td><code>const ages = [3, 10, 18, 20];
+						  ages.findIndex(checkAge);
+						  function checkAge(age) {
+						  return age > 18;
+						}</code> </td>
+				<td><output>3</output></td>
+				<td>It used to find the index of an array from left to right<br>
+					If there is no value is detect it return -1</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>lastIndexOf()</td>
+				<td><code>array.lastIndexOf(item, start)</code></td>
+				<td><code>const fruits = ["Apple", "Orange", "Apple", "Mango"];
+						  let index = fruits.lastIndexOf("Apple");</code> </td>
+				<td><output>2</output></td>
+				<td>It also used to find the index of an array but it find from right to left<br>
+					If there is no value is detect it return -1</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>forEach()</td>
+				<td><code>array.forEach(function(currentValue, index, arr), thisValue)</code></td>
+				<td><code>const fruits = ["apple", "orange", "cherry"];
+							fruits.forEach(myFunction);
+							</code> </td>
+				<td><output>apple
+							orange
+							cherry</output></td>
+				<td>In this method used to calls a function for each element in an array. It this return is not work</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>map()</td>
+				<td><code>array.forEach(function(currentValue, index, arr), thisValue)</code></td>
+				<td><code>const numbers = [4, 9, 16, 25];
+							const newArr = numbers.map(Math.sqrt)
+							</code> </td>
+				<td><output>apple
+							orange
+							cherry</output></td>
+				<td>In this method used to calls a once in a each element in an array. It create a new array. It this return is work</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>push()</td>
+				<td><code>array.push(item1, item2, ..., itemX)</code></td>
+				<td><code>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+						  fruits.push("Kiwi");
+							</code> </td>
+				<td><output>Banana,Orange,Apple,Mango,Kiwi</output></td>
+				<td>In this method use to add a new item in a end of the array, It is used to change the length of the array. It return a new push element</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>pop()</td>
+				<td><code>array.pop()</code></td>
+				<td><code>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+						fruits.pop();</code> </td>
+				<td><output>Banana,Orange,Apple</output></td>
+				<td>In this method use to delete a item in a end of the array, It is used to change original length of array. It return a pop element</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>reduce()</td>
+				<td><code>array.reduce(function(total, currentValue, currentIndex, arr), initialValue)</code></td>
+				<td><code>const numbers = [175, 50, 25];
+							document.getElementById("demo").innerHTML = numbers.reduce(myFunc);
+							function myFunc(total, num) {
+							  return total - num;
+							}</code> </td>
+				<td><output>100</output></td>
+				<td>In this method executes a reducer function for array element.It returns  a single value. It does not change a array</td>
+			</tr>
+			<tr>
+				<td>11</td>
+				<td>shift()</td>
+				<td><code>array.shift()</code></td>
+				<td><code>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+						  fruits.shift();</code> </td>
+				<td><output>Orange,Apple,Mango</output></td>
+				<td>In this method delete a first item of the array.  It is used to change original length of array. It return a shift element</td>
+			</tr>
+			<tr>
+				<td>12</td>
+				<td>slice()</td>
+				<td><code>array.slice(start, end)</code></td>
+				<td><code>const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+						  const citrus = fruits.slice(1, 3);</code> </td>
+				<td><output>Orange,Lemon</output></td>
+				<td>In this method returns selected elements in an array, as a new array.  In this selects from a given start, up to a given end. It not change a array.</td>
+			</tr>
+			<tr>
+				<td>13</td>
+				<td>sort()</td>
+				<td><code>array.sort(compareFunction)</code></td>
+				<td><code>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+						  fruits.sort();</code> </td>
+				<td><output>Apple,Banana,Mango,Orange</output></td>
+				<td>In this method it sorts the elements of an array. In this method overwrites the original array.. It change a strings in a array to alphabatical order.</td>
+			</tr>
+			<tr>
+				<td>14</td>
+				<td>splice()</td>
+				<td><code>array.splice(index, howmany, item1, ....., itemX)</code></td>
+				<td><code>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+						  fruits.splice(2, 0, "Lemon", "Kiwi")</code> </td>
+				<td><output>Banana,Orange,Lemon,Kiwi,Apple,Mango</output></td>
+				<td>In this method used to method adds and/or removes array elements. In this method overwrites the original array.</td>
+			</tr>
+			<tr>
+				<td>15</td>
+				<td>length</td>
+				<td><code>array.length</code></td>
+				<td><code>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+						  let length = fruits.length;<code> </td>
+				<td><output>4</output></td>
+				<td>In this method used to find the length of the array.</td>
+			</tr>
+		</table>
+	</body>
+</html>
