@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	</head>
+	<body>
+	<script>
+		const passenger=[
+			{
+				id:1,
+				passengerName:"Freddie Mercury",
+				isVegetarianOrVegan:false,
+				connectedFlights:2
+			},
+			{
+				id:2,
+				passengerName:"Amy Winehouse",
+				isVegetarianOrVegan:true,
+				connectedFlights:4
+			},
+			{
+				id:3,
+				passengerName:"Kurt Cobain",
+				isVegetarianOrVegan:true,
+				connectedFlights:3
+			},
+			{
+				id:3,
+				passengerName:"Michel Jackson",
+				isVegetarianOrVegan:true,
+				connectedFlights:1
+			}
+		];
+		let b=[];
+		passenger.forEach(pass=>{
+			b.push(pass.passengerName);
+		});
+		console.log(b);
+	</script>
+	</body>
+</html>
