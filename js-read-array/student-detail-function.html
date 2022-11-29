@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Array-insertion-5</title>
+	</head>
+	<body>
+	<script>
+	
+	let b=parseInt(prompt("Enter how many student details want to add"));
+	var e = myFun(b)
+	function myFun(d){
+		var a=[];
+		for(i=0;i<d;i++){
+			c={
+					name:"",
+					age:"",
+					degree:""
+				};
+				name=prompt("enter the name");
+				c.name=name;
+				age=parseInt(prompt("Enter the age"));
+				c.age=age;
+				degree=prompt("enter the degree");
+				c.degree=degree;
+			a[i]=c;
+		}
+		return a;
+	}
+	console.log(e);
+	
+	</script>
+	</body>
+</html>

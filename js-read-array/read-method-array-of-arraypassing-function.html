@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Array-insertion-5</title>
+	</head>
+	<body>
+	<script>		
+		function myFun(g){
+			var a=[];
+			var c;
+			for(i=0;i<b;i++){
+				d=parseInt(prompt("Create inner array"));
+				if(d==0){
+					d=parseInt(prompt("Enter the sigle array"));
+					a[i]=d;
+				}
+				else{
+					c=[]
+					for(j=0;j<d;j++){
+						e=prompt("Inner array value");
+						c[j]=e;
+					}
+				a[i]=c;
+				}
+		}
+		return a;
+		}
+		
+		function subFun(o){
+		if(g<f.length){
+			if(typeof f[o]=='number'){
+				k=f[o];
+				return k;
+			}
+			else{
+				if(typeof f[o]=='object'){
+					var h=parseInt(prompt("Enter the sub index find"));
+					l=f[o][h];
+					return l;
+				}
+			}
+		}
+		}
+		
+		b=parseInt(prompt("Enter create a array length"));
+		var f=myFun(b);
+		console.log(f);
+		var g=parseInt(prompt("Enter the main index find"));
+		var j=subFun(g);
+		console.log(j);
+		
+		
+	</script>
+	</body>
+</html>

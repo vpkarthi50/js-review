@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Array-insertion-5</title>
+	</head>
+	<body>
+	<script>		
+		function myFun(g){
+			var a=[];
+			var c;
+			for(i=0;i<b;i++){
+				c=[]
+				d=parseInt(prompt("Create inner array"));
+				for(j=0;j<d;j++){
+					e=prompt("Inner array value");
+					c[j]=e;
+				}
+				a[i]=c;
+			}
+			return a;
+		}
+		
+		function subFun(l,m){			
+			if(l<f.length){
+				o=f[l][m];
+			}
+			else{
+				console.log("You enter a exceed of array");
+			}
+			return o;
+		}
+		
+		b=parseInt(prompt("Enter create a array length"));
+		var f=myFun(b);
+		var g=parseInt(prompt("Enter the main index find"));
+		var h=parseInt(prompt("Enter the sub index find"));
+		var i=subFun(g,h);
+		console.log(f);
+		console.log(i);
+	</script>
+	</body>
+</html>
