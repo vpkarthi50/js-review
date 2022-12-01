@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>DOM</title>
+	</head>
+	<body>
+	<script>
+		let h1=document.createElement(prompt("Type img to create image"));
+			h1.src="bg.jpeg";
+			attribute=prompt("Enter the attribute");
+			attributeName=prompt("Enter the attribute name");
+			attributevalue=prompt("Enter the attribute value");
+			 h1.setAttribute(attribute,attributeName+ ":" + attributevalue);
+			
+			document.body.appendChild(h1);
+	</script>
+	</body>
+</html>
